@@ -49,56 +49,61 @@ export const organs = [
   }
 ];
 
-export const hospitalOrgans = [
+export const hospitals = [
   {
     id: 1,
-    organName: "Heart",
-    bloodGroup: "O+",
-    hospital: "City General Hospital",
+    name: "City General Hospital",
+    location: "Downtown District",
     distance: "2.5 km",
-    urgency: "Critical",
-    quantity: 1,
-    expiryTime: "12 hours"
+    contact: "+1-234-567-8900",
+    availableOrgans: [
+      { organName: "Heart", bloodGroup: "O+", quantity: 1, urgency: "Critical", expiryTime: "12 hours" },
+      { organName: "Kidney", bloodGroup: "B+", quantity: 2, urgency: "High", expiryTime: "24 hours" }
+    ]
   },
   {
     id: 2,
-    organName: "Kidney",
-    bloodGroup: "A+",
-    hospital: "St. Mary's Medical Center",
+    name: "St. Mary's Medical Center",
+    location: "North Avenue",
     distance: "5 km",
-    urgency: "High",
-    quantity: 2,
-    expiryTime: "24 hours"
+    contact: "+1-234-567-8901",
+    availableOrgans: [
+      { organName: "Liver", bloodGroup: "A+", quantity: 1, urgency: "High", expiryTime: "18 hours" },
+      { organName: "Eyes", bloodGroup: "Universal", quantity: 4, urgency: "Low", expiryTime: "48 hours" }
+    ]
   },
   {
     id: 3,
-    organName: "Liver",
-    bloodGroup: "B+",
-    hospital: "Central Hospital",
+    name: "Central Hospital",
+    location: "Medical District",
     distance: "0 km",
-    urgency: "Medium",
-    quantity: 1,
-    expiryTime: "18 hours"
+    contact: "+1-234-567-8902",
+    availableOrgans: [
+      { organName: "Blood", bloodGroup: "AB-", quantity: 10, urgency: "Medium", expiryTime: "35 days" },
+      { organName: "Kidney", bloodGroup: "O-", quantity: 1, urgency: "Critical", expiryTime: "20 hours" }
+    ]
   },
   {
     id: 4,
-    organName: "Eyes",
-    bloodGroup: "Universal",
-    hospital: "Eye Care Institute",
+    name: "Regional Medical Center",
+    location: "East Side",
     distance: "8 km",
-    urgency: "Low",
-    quantity: 4,
-    expiryTime: "48 hours"
+    contact: "+1-234-567-8903",
+    availableOrgans: [
+      { organName: "Heart", bloodGroup: "A-", quantity: 1, urgency: "Critical", expiryTime: "10 hours" },
+      { organName: "Lungs", bloodGroup: "B+", quantity: 1, urgency: "High", expiryTime: "15 hours" }
+    ]
   },
   {
     id: 5,
-    organName: "Blood",
-    bloodGroup: "AB-",
-    hospital: "Regional Blood Bank",
-    distance: "3 km",
-    urgency: "High",
-    quantity: 10,
-    expiryTime: "35 days"
+    name: "University Hospital",
+    location: "Campus Area",
+    distance: "12 km",
+    contact: "+1-234-567-8904",
+    availableOrgans: [
+      { organName: "Liver", bloodGroup: "AB+", quantity: 2, urgency: "Medium", expiryTime: "20 hours" },
+      { organName: "Blood", bloodGroup: "O+", quantity: 15, urgency: "Low", expiryTime: "30 days" }
+    ]
   }
 ];
 
