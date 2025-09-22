@@ -72,6 +72,12 @@ const HomePage = () => {
         </div>
       </section>
 
+
+      {/* Temporary Auth Test Section */}
+
+
+
+
       {/* Stats Section */}
       <section className="py-20 bg-gray-50 dark:bg-gray-900/50">
         <div className="max-w-7xl mx-auto px-4">
